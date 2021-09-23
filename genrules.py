@@ -53,3 +53,8 @@ ipv6 = true\n'''.format(datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
 
     print('''[URL Rewrite]
 ^http://(www.)?google.cn https://www.google.com 302\n''')
+
+    # Scripts
+    print('''[Script]
+bypass_paywalls = type=http-request,script-path=https://raw.githubusercontent.com/wuk0o/freerules/release/scripts/bypass_paywalls.js,pattern=https://www.wsj.com,enable=true
+''')
