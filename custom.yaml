@@ -44,3 +44,14 @@ custom-rules:
   - DOMAIN-SUFFIX,sketchup.com,PROXY
   - DOMAIN-SUFFIX,ufile.io,PROXY
   - DOMAIN-SUFFIX,mitsea.com,PROXY
+  - DOMAIN-SUFFIX,put.as,PROXY
+  - DOMAIN-SUFFIX,fsdn.com,PROXY
+  - DOMAIN-SUFFIX,c3.cx,PROXY
+  - DOMAIN-SUFFIX,justurl.xyz,PROXY
+  - DOMAIN-SUFFIX,pornvideos.host,PROXY
+  - DOMAIN-SUFFIX,pythonrepo.com,PROXY
+  - DOMAIN-SUFFIX,readthedocs.io,PROXY
+  - DOMAIN-SUFFIX,pypa.io,PROXY
+  - DOMAIN-SUFFIX,fastly.net,PROXY
+  - DOMAIN-SUFFIX,gravatar.com,PROXY
+
