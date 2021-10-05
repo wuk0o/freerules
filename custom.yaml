@@ -54,4 +54,15 @@ custom-rules:
   - DOMAIN-SUFFIX,pypa.io,PROXY
   - DOMAIN-SUFFIX,fastly.net,PROXY
   - DOMAIN-SUFFIX,gravatar.com,PROXY
+  - DOMAIN-SUFFIX,downloadhelper.net,PROXY
+  - DOMAIN-SUFFIX,sketch.com,PROXY
+  - DOMAIN-SUFFIX,fb.gg,PROXY
+  - DOMAIN-SUFFIX,dududown2ride.com,PROXY
+  - DOMAIN-SUFFIX,stripchat.com,PROXY
+  - DOMAIN-SUFFIX,bt4g.org,PROXY
+  - DOMAIN-SUFFIX,xchina.co,PROXY
+  - DOMAIN-SUFFIX,jetbrains.com,PROXY
+  - DOMAIN-SUFFIX,oracle.com,PROXY
 
+  - DOMAIN-SUFFIX,665txt.com,PROXY
+  - DOMAIN-SUFFIX,sischat.me,PROXY
