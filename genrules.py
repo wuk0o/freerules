@@ -56,5 +56,5 @@ ipv6 = true\n'''.format(datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
 
     # Scripts
     print('''[Script]
-bypass_paywalls = type=http-request,script-path=https://cdn.jsdelivr.net/gh/wuk0o/freerules@release/scripts/bypass_paywalls.js,pattern=https://www.wsj.com,enable=true
+bypass_paywalls = type=http-request,script-path=https://raw.githubusercontent.com/wuk0o/freerules/release/scripts/bypass_paywalls.js,pattern=https://www.wsj.com,enable=true
 ''')
