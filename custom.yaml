@@ -130,6 +130,16 @@ custom-rules:
 - DOMAIN-SUFFIX,maven.org,PROXY
 - DOMAIN-SUFFIX,redis.io,PROXY
 - DOMAIN-SUFFIX,filen.io,PROXY
+- DOMAIN-SUFFIX,vk.com,PROXY
+- DOMAIN-SUFFIX,linuxuprising.com,PROXY
+- DOMAIN-SUFFIX,oracle.com,PROXY
+- DOMAIN-SUFFIX,apache.org,PROXY
+- DOMAIN-SUFFIX,litenews.hk,PROXY
+- DOMAIN-SUFFIX,heroku.com,PROXY
+- DOMAIN-SUFFIX,wikipedia.org,PROXY
+- DOMAIN-SUFFIX,cloudfunctions.net,PROXY
+- DOMAIN-SUFFIX,herokuapp.com,PROXY
+- DOMAIN-SUFFIX,payssion.com,PROXY
 - DOMAIN-SUFFIX,665txt.com,PROXY
 - DOMAIN-SUFFIX,sischat.me,PROXY
 - DOMAIN-SUFFIX,fappenpics.com,PROXY
