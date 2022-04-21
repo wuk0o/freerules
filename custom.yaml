@@ -140,6 +140,15 @@ custom-rules:
 - DOMAIN-SUFFIX,cloudfunctions.net,PROXY
 - DOMAIN-SUFFIX,herokuapp.com,PROXY
 - DOMAIN-SUFFIX,payssion.com,PROXY
+- DOMAIN-SUFFIX,osdever.net,PROXY
+- DOMAIN-SUFFIX,edx.org,PROXY
+- DOMAIN-SUFFIX,edx-cdn.org,PROXY
+- DOMAIN-SUFFIX,fontawesome.com,PROXY
+- DOMAIN-SUFFIX,zdassets.com,PROXY
+- DOMAIN-SUFFIX,udemy.com,PROXY
+- DOMAIN-SUFFIX,udemycdn.com,PROXY
+- DOMAIN-SUFFIX,kubernetes.io,PROXY
+- DOMAIN-SUFFIX,linuxquestions.org,PROXY
 - DOMAIN-SUFFIX,665txt.com,PROXY
 - DOMAIN-SUFFIX,sischat.me,PROXY
 - DOMAIN-SUFFIX,fappenpics.com,PROXY
@@ -148,5 +157,6 @@ custom-rules:
 - DOMAIN-SUFFIX,mrdeepfakes.com,PROXY
 - DOMAIN-SUFFIX,pornpics.com,PROXY
 - DOMAIN-SUFFIX,asiantolick.com,PROXY
+- DOMAIN-SUFFIX,komica.org,PROXY
 - DOMAIN-KEYWORD,atlassian,PROXY
 - DOMAIN-KEYWORD,torrentkitty,PROXY
