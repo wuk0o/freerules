@@ -25,6 +25,21 @@ jobs:
     steps:
       - name: Setup Python
         uses: actions/setup-python@v2.2.2
+
+      - name: Install pipenv
+        run: |
+          python -m pip install --upgrade pipenv wheel
+
+      - id: cache-pipenv
+        uses: actions/cache@v1
+        with:
+          path: ~/.local/share/virtualenvs
+          key: ${{ runner.os }}-pipenv-${{ hashFiles('**/Pipfile.lock') }}
+
+      - name: Install dependencies
+        if: steps.cache-pipenv.outputs.cache-hit != 'true'
+        run: |
+          pipenv install --deploy --dev
       
       - name: Set Variables
         run: |
@@ -47,10 +62,9 @@ jobs:
           
       - name: Generate rules
         run: |
-          python -m pip install -r requirements.txt
           mkdir publish
           cp -r scripts publish
-          python genrules.py ./custom.yaml ./rules/gfwlist.txt ./rules/google.txt ./rules/telegram.txt > ./publish/blacklist.conf
+          pipenv run python genrules.py ./custom.yaml ./rules/gfwlist.txt ./rules/google.txt ./rules/telegram.txt > ./publish/blacklist.conf
           
       - name: Push to "release" branch
         run: |
