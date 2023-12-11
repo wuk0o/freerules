@@ -52,7 +52,7 @@ jobs:
         run: |
           mkdir publish
           cp -r scripts publish
-          pipenv run python genrules.py ./custom.yaml ./rules/gfwlist.txt ./rules/google.txt ./rules/telegram.txt > ./publish/rules.conf
+          python genrules.py ./custom.yaml ./rules/gfwlist.txt ./rules/google.txt ./rules/telegram.txt > ./publish/rules.conf
           
       - name: Push to "release" branch
         run: |
