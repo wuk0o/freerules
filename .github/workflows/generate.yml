@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Generate rules for Shadowrocket(Surge)
+name: Generate rules
 
 # Controls when the workflow will run
 on:
@@ -28,6 +28,7 @@ jobs:
 
       - uses: actions/setup-python@v4
         with:
+          python-version: '3.11'
           cache: 'pip'
 
       - run: pip install -r requirements.txt
@@ -48,11 +49,11 @@ jobs:
           curl -sSL $GOOGLE_RULES_URL > ./rules/google.txt
           curl -sSL $TELEGRAM_RULES_URL > ./rules/telegram.txt
           
-      - name: Generate rules
+      - name: Generate rules for Shadowrocket(Surge)
         run: |
           mkdir publish
           cp -r scripts publish
-          python genrules.py ./custom.yaml ./rules/gfwlist.txt ./rules/google.txt ./rules/telegram.txt > ./publish/rules.conf
+          python genrules.py ./custom.yaml ./rules/gfwlist.txt ./rules/google.txt ./rules/telegram.txt > ./publish/surge.conf
           
       - name: Push to "release" branch
         run: |
