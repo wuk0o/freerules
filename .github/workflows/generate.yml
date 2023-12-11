@@ -53,7 +53,7 @@ jobs:
         run: |
           mkdir publish
           cp -r scripts publish
-          python genrules.py ./custom.yaml ./rules/gfwlist.txt ./rules/google.txt ./rules/telegram.txt > ./publish/surge.conf
+          python genrules.py ./rules/custom.yaml ./rules/gfwlist.txt ./rules/google.txt ./rules/telegram.txt > ./publish/surge.conf
           
       - name: Push to "release" branch
         run: |
