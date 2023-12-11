@@ -44,7 +44,7 @@ jobs:
 
       - name: Download rules
         run: |
-          mkdir rules
+          mkdir -p rules
           curl -sSL $GFWLIST_RULES_URL > ./rules/gfwlist.txt
           curl -sSL $GOOGLE_RULES_URL > ./rules/google.txt
           curl -sSL $TELEGRAM_RULES_URL > ./rules/telegram.txt
